@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeva Convert — FadzzzCloud</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Halaman Sambutan -->
+  <div id="welcomeScreen" class="welcome-screen">
+    <h1>✨ Selamat Datang di <span>Sandeva Convert</span></h1>
+    <p>Unggah file Anda ke CDN <b>FadzzzCloud</b></p>
+    <button id="enterBtn">Masuk ke Website</button>
+  </div>
+
+  <!-- Video Background -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="musik.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Halaman Convert -->
+  <div class="container hidden">
+    <h1>Sandeva Convert</h1>
+    <p>Unggah file Anda ke CDN <b>FadzzzCloud</b></p>
+
+    <input type="file" id="fileInput" />
+    <button id="uploadBtn">🚀 Upload Sekarang</button>
+    <p id="statusMsg"></p>
+  </div>
+
+  <footer>
+    ✨ Designed by <b>Sandeva Convert X FadzzzCloud</b>
+  </footer>
+
+  <script src="sandev.js"></script>
+</body>
+</html>

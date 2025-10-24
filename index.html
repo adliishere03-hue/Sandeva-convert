@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeva Convert</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Video -->
+  <video id="bgVideo" autoplay loop muted playsinline>
+    <source src="musik.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="snow"></div>
+
+  <!-- Welcome -->
+  <div id="welcomeScreen" class="welcome-screen">
+    <div class="welcome-box glass">
+      <h1 class="neon-title">✨ Sandeva Convert</h1>
+      <p class="desc">Upload dan ubah file Anda menjadi URL instan dengan gaya futuristik 🚀</p>
+      <button id="enterBtn" class="btn glow">Masuk ke Website 🚀</button>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container hidden">
+    <div class="box glass">
+      <h1 class="neon-text">🚀 Sandeva Convert</h1>
+      <p class="desc">Konversi file Anda menjadi URL instan</p>
+
+      <div class="btn-group">
+        <button class="btn glow" id="selectBtn">📁 Pilih File</button>
+        <button class="btn glow" id="uploadBtn">🚀 Upload Sekarang</button>
+      </div>
+
+      <!-- Loading Saat Memasukkan Gambar -->
+      <div id="selectLoading" class="loading-box hidden">
+        <div class="loader"></div>
+        <p id="loadingText">Memasukkan gambar...</p>
+      </div>
+
+      <!-- Hasil Upload -->
+      <div id="resultBox" class="result-box hidden">
+        <p>✅ Upload sukses!</p>
+        <a id="fileUrl" href="#" target="_blank"></a>
+      </div>
+    </div>
+  </div>
+
+  <footer>✨ Made with 💜 by <span class="footer-name">Sandeva Convert</span></footer>
+
+  <script src="sandev.js"></script>
+</body>
+</html>
